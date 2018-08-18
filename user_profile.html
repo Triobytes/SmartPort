@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SmartPort</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">SmartPort</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user_trans.html">Transaction details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Plan Journey</a>
+                </li>
+                <!-- .nav-item -->
+                <li class="nav-item">
+                    <a href="logout.php" class="nav-link">Logout</a>
+                </li>
+                <!-- .nav-item -->
+            </ul>
+        </div>
+    </nav>
+    <div id="user" class="container h-100">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-5 h-100" id="qr-reader">
+                <!-- <input type=text size=16 placeholder="Tracking Code" class=qrcode-text> -->
+                <label class=qrcode-text-btn>
+                    <button>Scan</button>
+                    <input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1>
+                </label>
+            </div>
+            <!-- .col-sm-2 -->
+        </div>
+        <!-- .row -->
+        <div </div>
+            <!-- #qr-reader -->
+        </div>
+        <script src="assets/js/qr_packed.js"></script>
+        <script src="assets/js/qrcode.js"></script>
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
