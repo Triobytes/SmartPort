@@ -5,35 +5,14 @@
     <meta charset="UTF-8">
     <title>Register | Login</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
     <div class="form">
-        <ul class="tab-group">
-            <li class="tab"><a href="#register">Register</a></li>
-            <!-- .tab -->
-            <li class="tab active"><a href="#login">Log in</a></li>
-            <!-- .tab -->
-        </ul>
-        <!-- .tab-group -->
         <div class="container">
-            <div id="login">
-                <form action="sign.php" method="post">
-                    <div class="field">
-                        <!-- <label for="username">Username</label> -->
-                        <input type="text" name="username" placeholder="Enter username" required>
-                    </div>
-                    <!-- .field -->
-                    <div class="field">
-                        <!-- <label for="password">Password</label> -->
-                        <input type="password" name="password" placeholder="Enter password" required>
-                    </div>
-                    <!-- .field -->
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-            <!-- #login -->
             <div id="register">
+                <h1>Register</h1>
                 <form action="sign.php" method="post">
                     <div class="field">
                         <!-- <label for="Name">Name</label> -->
@@ -68,7 +47,6 @@
         <!-- .container -->
     </div>
     <!-- .form -->
-    
     <!-- jQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"></script>
