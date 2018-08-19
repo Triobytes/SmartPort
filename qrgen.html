@@ -33,30 +33,19 @@
             </ul>
         </div>
     </nav>
-    <div id="user" class="container h-100">
-        <div class="row">
-            <div class="col-sm-2 offset-sm-5 h-100" id="qr-reader">
-                <!-- <input type=text size=16 placeholder="Tracking Code" class=qrcode-text> -->
-                <input type="text" id="qr-text" name="qr-text" autocomplete="off">
-                <label class=qrcode-text-btn>
-                    <input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1>
-                </label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 offset-sm-3">
-            <h3 class="text-center">Click above icon to scan QR code</h3>                
-            </div><!-- .col-sm-6 offset-sm-3 -->
-
-        </div><!-- .row -->
-            <!-- .col-sm-2 -->
-        </div>
-        <!-- .row -->
-        <div> </div>
-        <!-- #qr-reader -->
+    <div class="container">
+        <div id="qrcode"></div>
+        <!-- #qrcode -->
     </div>
-    <script src="assets/js/qr_packed.js"></script>
-    <script src="assets/js/qrcode.js"></script>
+    <!-- .container -->
+    <script src="assets/js/qrgen.min.js"></script>
+    <script>
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var data = url.searchParams.get('to');
+    var qrcode = new QRCode("qrcode");
+    qrcode.makeCode('data');
+    </script>
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>

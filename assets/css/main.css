@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Oswald:300,400');
+
 /* GLOBAL */
 
 *,
@@ -9,6 +11,10 @@
 body {
     font-family: 'Oswald', sans-serif;
     background-color: #EAE7DC !important;
+}
+
+.navbar {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -98,17 +104,22 @@ button[type="submit"] {
 
 
 /* QR CODE */
+#qr-text {
+  width: 0;
+  border: none;
+}
 .qrcode-text {
-    padding-right: 1.7em;
-    margin-right: 0
+    /*padding-right: 1.7em;*/
+    /*margin-right: 0*/
 }
 
 .qrcode-text-btn {
     display: inline-block;
-    /*background: url(../img/QR_icon.svg) 50% 50% no-repeat;*/
-    height: 50px;
-    width: 50px;
-    margin-left: -1.7em;
+    background: url(../img/qricon.png) /*50% 50%*/ no-repeat !important;
+    /*background-color: black;*/
+    height: 250px;
+    width: 250px;
+    /*margin-left: -1.7em;*/
     cursor: pointer
 }
 
@@ -118,4 +129,15 @@ button[type="submit"] {
     width: 1px;
     height: 1px;
     opacity: 0
+}
+
+/* PAYMENT CARD */
+.card {
+    vertical-align: middle;
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }

@@ -13,3 +13,8 @@
      };
      reader.readAsDataURL(node.files[0]);
  }
+
+ document.getElementById("qr-text").addEventListener("input", function() {
+  var res = this.value;
+  window.location = "ticket_gen.html";
+ })
