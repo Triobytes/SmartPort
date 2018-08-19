@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Oswald:300,400');
 
+
+/*COLOR SCHEMES
+#17252A
+#2B7A78
+#3AAFA9
+#DEF2F1
+#FEFFFF
+*/
+
+
 /* GLOBAL */
 
 *,
@@ -10,11 +20,12 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #EAE7DC !important;
+    background-color: #3AAFA9 !important;
 }
 
 .navbar {
   font-family: 'Open Sans', sans-serif;
+  border: none;
 }
 
 a {
