@@ -7,6 +7,8 @@
 #3AAFA9
 #DEF2F1
 #FEFFFF
+
+#515151   
 */
 
 
@@ -20,7 +22,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #3AAFA9 !important;
+    background-color: #FEFFFF !important;
 }
 
 .navbar {
@@ -33,8 +35,50 @@ a {
     color: #1ab188;
 }
 
+/* GLOBAL */
+h1,h2,h3,h4,h5,h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+}
 
+h1 {
+  font-size: 3em;
+}
 
+h1,h2 {
+  margin: 0 0 40px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+/* ABOUT */
+#about {
+  height: 100vh;
+  padding-top: 50px;
+}
+/* CAROUSEL*/
+.carousel-item {
+  height: 100% !important;
+}
+.carousel-item img{
+  height: 100vh;
+  width: 100%;
+}
 
 /*.heading {
   text-align: center;
@@ -42,7 +86,7 @@ a {
 
 .form {
     vertical-align: middle;
-    background: rgba(19, 35, 47, 0.9);
+    background: #17252a;
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;
@@ -64,18 +108,22 @@ h1 {
     margin: 25px;
 }
 
+#register h1, #login h1, #add_bus h1, #add_train h1 {
+  color: #FEFFFF;
+}
+
 input,
 textarea {
     font-size: 22px;
     display: block;
     width: 100%;
     height: 100%;
-    padding: 5px 10px;
+    padding: 15px;
     background: none;
     background-image: none;
     border: 1px solid #a0b3b0;
     color: #ffffff;
-    border-radius: 0;
+    border-radius: 5px;
     -webkit-transition: border-color .25s ease, box-shadow .25s ease;
     transition: border-color .25s ease, box-shadow .25s ease;
 }
